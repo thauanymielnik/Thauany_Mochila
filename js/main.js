@@ -38,5 +38,5 @@ function criaElemento(nome,quantidade) {
 
     Itens.push(itemAtual)
 
-    localStorage.setItem ("item", JSON.stringify(itemAtual)
+    localStorage.setItem ("item", JSON.stringify(itemAtual))
 }
