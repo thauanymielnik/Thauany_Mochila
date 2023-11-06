@@ -1,5 +1,11 @@
 const form = document.getElementById("novoItem")
 const lista = document.getElementById("lista")
+const itens = localStorage.getItem("itens") || []
+
+itens.forEach( (elemento => ){
+    console.log(elemento)
+
+} )
 
 form.addEventListener("submit", (evento) => {
     evento.preventDefault()
