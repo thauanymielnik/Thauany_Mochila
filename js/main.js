@@ -25,6 +25,12 @@ function criaElemento(nome,quantidade) {
 
     lista.appendChild(novoItem)
 
-    localStorage.setItem ("nome", nome)
-    localStorage.setItem ("quantidade", quantidade)
+    const itemAtual = {
+        "nome": nome
+        "quantidade": quantidade
+    }
+
+    Itens.push(itemAtual)
+
+    localStorage.setItem ("item", JSON.stringify(itemAtual)
 }
